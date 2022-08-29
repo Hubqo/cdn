@@ -1,0 +1,187 @@
+﻿<head>
+<link rel="icon" href="./com/success.svg">
+<title>Dearler Music</title>
+<style>
+@media screen and (max-width:1250px){
+    .desktop1{
+        display:none!important
+    }
+}
+@media not screen and (max-width:1250px){
+    .mobile1{
+        display:none!important
+    }
+}
+    html,body{
+        font-family:MainFont,sans-serif;display:flex;flex-direction:column;min-height:100vh;padding:0;margin:0;z-index:-2;overflow-x:hidden;background-color:#fff;height:100%
+    }
+        .small-hover:hover{
+            transform:scale(1.15)!important
+        }
+        .shadow{
+            -webkit-box-shadow:0 0 5px 0 #000000bf;-moz-box-shadow:0 0 5px 0 #000000bf;box-shadow:0 0 5px 0 #000000bf
+        }
+        .button1{
+            border-radius:6px;padding:0 45px;background-color:#7feffd;color:#fff;border:none;font-size:25px;font-weight:bolder;cursor:pointer
+        }
+        .button2{border-radius:3px;padding:15 15px;background-color:#00ff95;color:#fff;border:none;font-size:25px;font-weight:bolder;
+        }
+        .button3{border-radius:3px;padding:0 18px;background-color:#0bb12e;color:#fff;border:none;font-size:25px;font-weight:bolder;cursor:pointer
+        }
+        .button4{border-radius:3px;padding:0 4px;background-color:#ffca5b;border:none;font-size:25px;font-weight:bolder;cursor:pointer
+        }
+        header{
+            display:flex;justify-content:space-between;align-items:center;background-color:#7feffd;z-index:10
+        }#h_logo{
+            display:inline-block;margin:5px 0 5px 30px;color:#fff;vertical-align:middle;font-size:24px
+        }#h_logo p{
+            display:inline-block;margin:0;padding:0;vertical-align:middle
+        }#h_logo img{
+            height:40px;width:45px;vertical-align:middle;display:inline-block
+        }
+        header ul{
+            margin:0 20px 0 0;background-color:#5f5f5f99;text-decoration:none;border-radius:7px;padding:0 5px
+        }
+        header li{
+            margin:5px;padding:0;text-decoration:none;display:inline-block
+        }
+        header li a{
+            text-decoration:none;color:#ffca5b;font-size:20px
+        }
+        header li a:hover,header .active1{border-bottom:2px solid red}
+        .shadow1{
+            z-index:2;position:fixed;width:100%;height:100%;left:0;top:0;background:#00000099;display:flex;justify-content:center;align-items:center;overflow-y:auto
+        }
+        .main-modal{
+            width:350px;background:#fff;border-radius:5px;display:flex;justify-content:center;align-items:center;flex-direction:column
+        }
+        .hideModal{
+            z-index:-1;opacity:0;animation:hide .25s;transform:scale(0)
+        }        
+        @keyframes hide{from{z-index:2;transform:scale(1);opacity:1}to{z-index:-1;transform:scale(0);opacity:0}
+    }
+    .showModal{opacity:1;z-index:99999999999999999999999999;animation:show .2s;transform:scale(1)
+    }
+    @keyframes show{from{transform:scale(0);opacity:0;z-index:-1}to{transform:scale(1);opacity:1;z-index:2}
+}
+.premod{z-index:-1;opacity:0
+}
+.topnav{width:100vw;position:relative;overflow:hidden
+}
+.topnav #myLinks{max-height:0;margin-top:60px;transition:max-height .5s cubic-bezier(0,1,0,1);overflow:hidden
+}
+.topnav a{color:#ffca5b;padding:14px 40px;text-decoration:none;font-size:25px;display:block;text-align:center
+}
+.topnav a.icon{background:transparent;display:block;text-align:right;position:relative;color:#fff;right:0;top:0
+}
+.topnav .nvstuff:hover{background-color:#ffffff1a;color:#fff;cursor:pointer
+}
+.active{background-color:#4caf50;color:#fff
+}
+.noclick:hover{cursor:auto
+}
+.menu-icon{cursor:pointer;display:inline-block;padding:28px 20px;position:relative;user-select:none;-webkit-tap-highlight-color:transparent
+}
+.menu-icon .navicon{background:#fff;display:block;height:6px;position:relative;transition:background .2s ease-out;width:30px
+}
+.menu-icon .navicon:before,.menu-icon .navicon:after{background:#fff;content:'';display:block;height:100%;position:absolute;transition:all .2s ease-out;width:100%
+}
+.menu-icon .navicon:after{top:12px}.menu-icon .navicon:before{top:-12px}.menu-btn{display:none}
+.menu-btn:checked~.menu{max-height:240px}.menu-btn:checked~.menu-icon .navicon{background:0 0}
+.menu-btn:checked~.menu-icon .navicon:after{transform:rotate(-45deg)}
+.menu-btn:checked~.menu-icon .navicon:before{transform:rotate(45deg)
+}.menu-btn:checked~.menu-icon:not(.steps) .navicon:before,.menu-btn:checked~.menu-icon:not(.steps) .navicon:after{top:0}
+.greenit{color:#0cd03d!important}
+.discord{color:#00cbe1!important}
+#username{font-family:MainFont,sans-serif;border:2px solid #000000cc;font-size:30px;border-radius:5px;padding:8px 12px 4px;width:400px;max-width:70vw;margin-bottom:15px;display:block
+}#h_login{margin:5px 0 5px 20px}#h_login img{
+    width:50px;border-radius:50%;display:inline-block}#h_login div{display:inline-block
+    }#h_login h2{text-transform:uppercase;color:#fff;margin:0;cursor:pointer}#h_login p{color:#0bb12e;margin:0}
+    .pointer{cursor:pointer!important}
+</style>
+<header class="shadow">
+<div id="h_login" class="desktop1">
+
+<img src="./com/logo.png">
+<div>
+<h2 onclick="window.location=&#39;./logout&#39;">USUARIO</h2>
+<p>0</p>
+</div></div>
+<ul class="desktop1">
+<body style="background-color: #000;">
+<li><a href="/?s=" id="referrals">
+PUBLICACIONES
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path d="M38.5 0h-29C4.3 0 0 4.3 0 9.5v29C0 43.7 4.3 48 9.5 48h29c5.2 0 9.5-4.3 9.5-9.5v-29C48 4.3 43.7 0 38.5 0zM45 38.5c0 3.6-2.9 6.5-6.5 6.5h-29c-3.3 0-6-2.5-6.4-5.6l8.3-8.3c.1-.1.3-.2.4-.2.1 0 .2 0 .4.2l6.3 6.3c1.4 1.4 3.6 1.4 5 0L35.9 25c.2-.2.6-.2.8 0l8.3 8.3v5.2zm0-9.4l-6.2-6.2c-1.3-1.3-3.7-1.3-5 0L21.3 35.3c-.1.1-.3.2-.4.2-.1 0-.2 0-.4-.2L14.2 29c-1.3-1.3-3.7-1.3-5 0L3 35.2V9.5C3 5.9 5.9 3 9.5 3h29C42.1 3 45 5.9 45 9.5v19.6zM11.8 8.2c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"></path></svg>
+
+</a></li>
+
+
+<li><a href="/?s=" id="referrals">
+MENSAJES
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+
+</a></li>
+
+
+<li><a href="/?s=" id="referrals">
+SEGUIDORES
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path></svg>
+
+</a></li>
+
+
+<li><a href="/?s=" id="referrals">
+BUSCAR
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
+
+</a></li>
+
+
+<li><a href="/?s=" id="referrals">
+LIKES
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+
+</a></li>
+<li><a href="/?s=" id="referrals">
+PERFIL
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+<path d="M41.5 5.5H30.4c-.5 0-1-.2-1.4-.6l-4-4c-.6-.6-1.5-.6-2.1 0l-4 4c-.4.4-.9.6-1.4.6h-11c-3.3 0-6 2.7-6 6v30c0 3.3 2.7 6 6 6h35c3.3 0 6-2.7 6-6v-30c0-3.3-2.7-6-6-6zm-29.4 39c-.6 0-1.1-.6-1-1.2.7-3.2 3.5-5.6 6.8-5.6h12c3.4 0 6.2 2.4 6.8 5.6.1.6-.4 1.2-1 1.2H12.1zm32.4-3c0 1.7-1.3 3-3 3h-.6c-.5 0-.9-.4-1-.9-.6-5-4.8-8.9-9.9-8.9H18c-5.1 0-9.4 3.9-9.9 8.9-.1.5-.5.9-1 .9h-.6c-1.7 0-3-1.3-3-3v-30c0-1.7 1.3-3 3-3h11.1c1.3 0 2.6-.5 3.5-1.5L24 4.1 26.9 7c.9.9 2.2 1.5 3.5 1.5h11.1c1.7 0 3 1.3 3 3v30zM24 12.5c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.6 9.6 9.6 9.6-4.3 9.6-9.6-4.3-9.6-9.6-9.6zm0 16.1c-3.6 0-6.6-2.9-6.6-6.6 0-3.6 2.9-6.6 6.6-6.6s6.6 2.9 6.6 6.6c0 3.6-3 6.6-6.6 6.6z"></path></svg>
+</a></li>
+
+<li><a href="/?s=" id="referrals">
+AJUSTES
+<svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+    <path d="M33.7 44.12H8.5a8.41 8.41 0 01-8.5-8.5v-25.2a8.41 8.41 0 018.5-8.5H23a1.5 1.5 0 010 3H8.5a5.45 5.45 0 00-5.5 5.5v25.2a5.45 5.45 0 005.5 5.5h25.2a5.45 5.45 0 005.5-5.5v-14.5a1.5 1.5 0 013 0v14.5a8.41 8.41 0 01-8.5 8.5z"></path><path d="M17.5 34.82h-6.7a1.5 1.5 0 01-1.5-1.5v-6.7a1.5 1.5 0 01.44-1.06L34.1 1.26a4.45 4.45 0 016.22 0l2.5 2.5a4.45 4.45 0 010 6.22l-24.3 24.4a1.5 1.5 0 01-1.02.44zm-5.2-3h4.58l23.86-24a1.45 1.45 0 000-2l-2.5-2.5a1.45 1.45 0 00-2 0l-24 23.86z"></path></svg>
+</a></li>
+
+</ul>
+<color style="color: #00ff95;"></color>
+<div class="topnav mobile1">
+<div style="position: absolute; top: 5px; left: 10px">
+<a style="display: inline-block; padding: 0; color: #fff; text-transform: uppercase;">
+<div style="position: relative; vertical-align: middle; display: inline-block; text-align: left;">
+<style>
+.body{display:flex;justify-content:center;
+align-items:center;
+height:100%;
+background:url(../imgs/promo_img.png) fixed no-repeat;background-position:center bottom}
+.holder{background-color:#ffffffcc;
+text-align:center;
+border-radius:5px;
+border:3px solid #7feffd;padding:15px 45px;margin:25px 10px}
+</style>
+<i class="fa fa-bars"></i></a>
+<div id="myLinks" style="max-height: 0px;">
+</div>
+</header>
+<div class="body"><button class="button1"><h3> 🔥😎 Flow Peligroso</h3></button>
+<div><button onclick="window.location =&#39;./profile/Roun95&#39;" class="button3">De: Roun95</button>
+<button class="button4" onclick="window.location =&#39;./seguir/Roun95&#39;"><svg class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+    <path d="M40 33.5c-.4 0-.8-.1-1.1-.4L24 18.1l-14.9 15c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l16-16c.6-.6 1.5-.6 2.1 0l16 16c.6.6.6 1.5 0 2.1-.3.3-.7.4-1.1.4z"></path></svg>
+    </button>     
+<div class="holder"><button class="button2"><iframe src="./com/video/1.mp4" frameborder="0" width="640" height="360"></button></div></div></div></head>
